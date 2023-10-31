@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Registration Form</title>
+</head>
+<style>
+    body{
+        background-image:url(zz.jpg);
+        background-size: cover;
+        position: center;
+        
+    }
+
+</style>
+<body>
+    <center>
+    <h1>College Registration Form</h1>
+    <form action="process_registration.php" method="post">
+        <div style="margin: 10px;">
+            <label for="first_name" style="display: inline-block; width: 150px;">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required style="width: 250px;"><br>
+        </div>
+
+        <div style="margin: 10px;">
+            <label for="last_name" style="display: inline-block; width: 150px;">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required style="width: 250px;"><br>
+        </div>
+
+        <div style="margin: 10px;">
+            <label for="email" style="display: inline-block; width: 150px;">Email:</label>
+            <input type="email" id="email" name="email" required style="width: 250px;"><br>
+        </div>
+
+        <div style="margin: 10px;">
+            <label for="phone" style="display: inline-block; width: 150px;">Phone:</label>
+            <input type="tel" id="phone" name="phone" required style="width: 250px;"><br>
+        </div>
+
+        <div style="margin: 10px;">
+            <label for="address" style="display: inline-block; width: 150px;">Address:</label>
+            <textarea id="address" name="address" rows="4" required style="width: 250px;"></textarea><br>
+        </div>
+
+        <div style="margin: 10px;">
+            <label for="date_of_birth" style="display: inline-block; width: 150px;">Date of Birth:</label>
+            <input type="date" id="date_of_birth" name="date_of_birth" required style="width: 250px;"><br>
+        </div>
+
+        <div style="margin: 10px;">
+            <label for="gender" style="display: inline-block; width: 150px;">Gender:</label>
+            <select id="gender" name="gender" required style="width: 250px;">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+        </div>
+
+        <div style="margin: 10px;">
+            <label for="program" style="display: inline-block; width: 150px;">Program of Study:</label>
+            <input type="text" id="program" name="program" required style="width: 250px;"><br>
+        </div>
+
+        <div style="margin: 10px;">
+            <label for="year" style="display: inline-block; width: 150px;">Year of Study:</label>
+            <input type="number" id="year" name="year" required style="width: 250px;"><br>
+        </div>
+
+        <div style="margin: 10px;">
+            <input type="submit" value="Register" style="background-color: #0073e6; color: white; border: none; padding: 10px 20px; text-align: center; font-size: 16px; cursor: pointer;">
+        </div>
+    </form>
+</center>
+</body>
+</html>
